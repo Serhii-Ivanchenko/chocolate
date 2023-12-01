@@ -1,0 +1,37 @@
+/* #region Basic styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #111;
+    background-color: #fff;
+    letter-spacing: -0.28px;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    color:#111;
+    text-decoration: none;
+}
+/* #endregion */
+
+/* #region Header */
+.logo {
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.11;
+   letter-spacing: -0.54px;
+}
+
+.logo-accent {
+    font-style: italic;
+}
+
+.nav-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14x;
+}
+/* #endregion */
