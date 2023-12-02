@@ -1,37 +1,137 @@
 /* #region Basic styles */
 body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #111;
-    background-color: #fff;
-    letter-spacing: -0.28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #111;
+  background-color: #fff;
+  letter-spacing: -0.28px;
 }
 
-ul, ol {
-    list-style-type: none;
+ul,
+ol {
+  list-style-type: none;
 }
 
 a {
-    color:#111;
-    text-decoration: none;
+  color: currentColor;
+  text-decoration: none;
 }
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
 /* #endregion */
 
 /* #region Header */
 .logo {
-   font-size: 18px;
-   font-weight: 700;
-   line-height: 1.11;
-   letter-spacing: -0.54px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.54px;
 }
 
 .logo-accent {
-    font-style: italic;
+  font-style: italic;
 }
 
 .nav-item {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14x;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14x;
+}
+
+/* #endregion */
+
+/* #region Hero */
+.hero {
+  background-color: rgba(17, 17, 17, 0.7);
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.84px;
+}
+
+.orange-button {
+  color: #fff;
+  font-weight: 600;
+  background-color: #fd9222;
+}
+
+.grey-button {
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.scroll-text {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.42px;
+}
+
+.scroll-button {
+}
+
+/* #endregion */
+
+/* #region Benefits */
+.benefits {
+  background-color: #1e1823;
+}
+
+.benefits-title {
+  color: #fff;
+}
+
+.benefits-text {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.29;
+}
+
+/* #endregion */
+
+/* #region Ingridients */
+.ingridients {
+}
+.section-title {
+}
+
+.orange-text {
+  color: #fd9222;
+}
+
+.ingridients-img {
+  background-color: #fd9222;
+}
+
+.white-text {
+  color: #fff;
+  background-color: #fd9222;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+
+.black-text {
+  font-weight: 600;
+  line-height: 1.29;
 }
 /* #endregion */
