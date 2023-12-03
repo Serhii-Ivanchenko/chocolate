@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   color: #111;
   background-color: #fff;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.02em;
 }
 
 ul,
@@ -22,14 +22,24 @@ a {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.17;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+
+.accent {
+  color: #fd9222;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.22;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
 }
 
 /* #endregion */
@@ -39,7 +49,7 @@ h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: -0.54px;
+  letter-spacing: -0.03em;
 }
 
 .logo-accent {
@@ -50,6 +60,11 @@ h3 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14x;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #fd9222;
 }
 
 /* #endregion */
@@ -64,7 +79,7 @@ h3 {
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
-  letter-spacing: -0.84px;
+  letter-spacing: -0.03em;
 }
 
 .orange-button {
@@ -83,12 +98,17 @@ h3 {
   color: #fff;
   font-weight: 500;
   line-height: 1.29;
-  letter-spacing: -0.42px;
+  letter-spacing: -0.03em;
 }
 
 .scroll-button {
 }
 
+.orange-button,
+.grey-button,
+.scroll-button {
+  cursor: ;
+}
 /* #endregion */
 
 /* #region Benefits */
@@ -117,16 +137,27 @@ h3 {
   color: #fd9222;
 }
 
-.ingridients-img {
+.ingridients-orange-div {
   background-color: #fd9222;
 }
 
+.ingridients-black-div {
+  background-color: #1e1823;
+}
+
+.ingridients-white-div {
+  border: 1px solid #fd9222;
+}
+/* .ingridients-img {
+  background-color: #fd9222;
+} */
+
 .white-text {
   color: #fff;
-  background-color: #fd9222;
+  /* background-color: #fd9222; */
   font-weight: 600;
   line-height: 1.29;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
