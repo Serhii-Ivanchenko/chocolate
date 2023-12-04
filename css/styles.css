@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #111;
-  background-color: #fff;
+  background-color: #fafafa;
   letter-spacing: -0.02em;
 }
 
@@ -56,10 +56,11 @@ button {
   font-style: italic;
 }
 
-.nav-item {
+.nav-link {
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14x;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
 }
 
 .nav-link:hover,
@@ -88,26 +89,38 @@ button {
   background-color: #fd9222;
 }
 
+.orange-button:hover,
+.orange-button:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
 .grey-button {
   color: #fff;
   font-weight: 600;
   background-color: transparent;
 }
 
-.scroll-text {
+.grey-button:hover,
+.grey-button:focus {
+  color: #fd9222;
+}
+
+.scroll-button {
   color: #fff;
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  background-color: transparent;
 }
 
-.scroll-button {
+.scroll-down-icon {
+  background-color: #fff;
 }
 
-.orange-button,
-.grey-button,
-.scroll-button {
-  cursor: ;
+.scroll-button:hover,
+.scroll-button:focus {
+  color: #fd9222;
 }
 /* #endregion */
 
@@ -129,6 +142,7 @@ button {
 
 /* #region Ingridients */
 .ingridients {
+  background-color: #fff;
 }
 .section-title {
 }
@@ -148,13 +162,9 @@ button {
 .ingridients-white-div {
   border: 1px solid #fd9222;
 }
-/* .ingridients-img {
-  background-color: #fd9222;
-} */
 
 .white-text {
   color: #fff;
-  /* background-color: #fd9222; */
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -164,5 +174,178 @@ button {
 .black-text {
   font-weight: 600;
   line-height: 1.29;
+}
+/* #endregion */
+
+/* #region How it's made */
+.made {
+}
+.section-title {
+}
+.accent {
+}
+
+.made-img {
+}
+.made-right-side {
+  background-color: #fff;
+}
+.made-list {
+}
+.made-item {
+  line-height: 1.28;
+}
+/* #endregion */
+
+/* #region Products */
+.products {
+}
+.section-title {
+}
+.accent {
+}
+.products-list {
+}
+.products-item {
+  background-color: #fff;
+}
+.products-img {
+}
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  text-transform: uppercase;
+}
+.product-description {
+  color: rgba(17, 17, 17, 0.7);
+  font-size: 12px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: -0.02em;
+}
+.product-button {
+  font-weight: 600;
+  background-color: transparent;
+}
+/* #endregion */
+
+/* #region Top sellers */
+.bestsellers {
+}
+.section-title {
+}
+.accent {
+}
+.bestsellers-list {
+}
+.bestsellers-item {
+}
+.bestsellers-img {
+}
+.bestsellers-name {
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+/* #endregion */
+
+/* #region Reviews */
+.reviews {
+}
+.section-title {
+}
+.accent {
+}
+.reviews-list {
+}
+.reviews-item {
+  background-color: #fff;
+}
+.reviews-avatar {
+}
+.reviews-name {
+  text-align: center;
+  line-height: 1.33;
+}
+.reviews-text {
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  line-height: 1.29;
+}
+.reviews-button {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+  color: #fff;
+  background-color: #fd9222;
+}
+/* #endregion */
+
+/* #region Footer */
+.footer {
+  background-color: #1e1823;
+}
+
+.footer-slogan {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+.footer-socials {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+}
+.footer-socials-list {
+}
+.footer-socials-item {
+}
+.footer-socials-link {
+}
+.footer-socials-icon {
+}
+.footer-address {
+  font-style: normal;
+}
+.footer-contacts {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+}
+.footer-contacts-list {
+}
+.footer-contacts-item {
+}
+.footer-address-link {
+  color: #fff;
+  text-align: center;
+  line-height: 1.29;
+}
+
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: #fd9222;
+}
+.footer-menu {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #fd9222;
 }
 /* #endregion */
