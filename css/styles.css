@@ -144,6 +144,7 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
+  padding: 8px;
   border-radius: 10px;
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
@@ -447,19 +448,32 @@ img {
 
 /* #region Reviews */
 .reviews {
+  padding-bottom: 120px;
 }
 .section-title {
 }
 .accent {
 }
 .reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 50px;
 }
 .reviews-item {
+  width: calc((100% - 2 * 28px) / 3);
+  padding: 24px;
   background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
 }
 .reviews-avatar {
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .reviews-name {
+  margin-bottom: 24px;
   text-align: center;
   line-height: 1.33;
 }
@@ -469,6 +483,12 @@ img {
   line-height: 1.29;
 }
 .reviews-button {
+  display: block;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  padding: 14px 40px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   font-weight: 600;
   background-color: transparent;
@@ -483,27 +503,49 @@ img {
 
 /* #region Footer */
 .footer {
+  padding: 50px 0;
   background-color: #1e1823;
 }
 
+.footer-wrapper {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 .footer-slogan {
+  margin-right: auto;
+  width: 300px;
   color: #fff;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.02em;
 }
+.footer-socials-wrapper {
+  margin-right: 50px;
+}
 .footer-socials {
+  margin-bottom: 14px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
 }
 .footer-socials-list {
+  display: flex;
+  gap: 14px;
 }
 .footer-socials-item {
 }
 .footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-socials-icon {
 }
@@ -511,6 +553,7 @@ img {
   font-style: normal;
 }
 .footer-contacts {
+  margin-bottom: 14px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -518,7 +561,8 @@ img {
 }
 .footer-contacts-list {
 }
-.footer-contacts-item {
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 .footer-address-link {
   color: #fff;
@@ -530,11 +574,22 @@ img {
 .footer-address-link:focus {
   color: #fd9222;
 }
-.footer-menu {
+
+.footer-menu-wrapper {
+  padding-top: 24px;
 }
+
+.footer-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .footer-menu-item {
 }
 .footer-menu-link {
+  display: block;
+  padding: 18px 0;
   color: #fff;
   font-weight: 500;
   line-height: 1.14;
