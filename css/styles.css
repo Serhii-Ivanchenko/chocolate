@@ -225,12 +225,13 @@ img {
   color: #fff;
   font-weight: 600;
   background-color: transparent;
-  transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out, border-color 300ms ease-in;
 }
 
 .grey-button:hover,
 .grey-button:focus {
   color: #fd9222;
+  border-color: #fd9222;
 }
 
 .scroll-button {
