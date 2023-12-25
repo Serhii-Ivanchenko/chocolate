@@ -890,12 +890,27 @@ img {
   padding-left: 62px;
   align-items: center;
   align-self: stretch;
+  color: #404040;
+  font-size: 18px;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
   outline: transparent;
   transition: border-color 300ms ease-in-out;
 }
+.input-field:not(:placeholder-shown):valid {
+  border-color: lightgreen;
+}
+.input-field:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.input-field:not(:placeholder-shown):valid + .input-icon {
+  stroke: lightgreen;
+}
+.input-field:not(:placeholder-shown):invalid + .input-icon {
+  stroke: red;
+}
+
 .input-icon {
   position: absolute;
   top: 50%;
@@ -912,5 +927,90 @@ img {
 
 .input-field:focus + .input-icon {
   stroke: #fd9222;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  height: 137px;
+  padding: 22px 24px;
+  color: #404040;
+  font-size: 18px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  resize: none;
+  outline: transparent;
+  transition: border-color 300ms ease-in-out;
+}
+
+.textarea:focus {
+  border-color: #fd9222;
+}
+
+.textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 18px;
+}
+
+.checkbox-wrapper {
+  margin-bottom: 40px;
+}
+.checkbox {
+}
+
+.checkbox-label {
+}
+.checkbox-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+.icon-tick {
+  fill: transparent;
+  scale: 0.3;
+  transition: fill 300ms ease-in-out, scale 300ms ease-in-out;
+}
+
+.checkbox:checked + .checkbox-label > .checkbox-icon {
+  background-color: #fd9222;
+  border: transparent;
+}
+
+.checkbox:checked + .checkbox-label > .checkbox-icon > .icon-tick {
+  fill: #fff;
+  scale: 1;
+}
+
+.checkbox:focus + .checkbox-label > .checkbox-icon {
+  border-color: #fd9222;
+}
+
+.privacy-link {
+  color: #fd9222;
+  text-decoration: underline;
+}
+
+.send-btn {
+  min-width: 117px;
+  min-height: 45px;
+  padding: 14px 40px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 100px;
+  background: #fd9222;
+  outline: transparent;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
 }
 /* #endregion */
