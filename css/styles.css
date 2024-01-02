@@ -1180,3 +1180,117 @@ img {
 }
 
 /* #endregion */
+
+/* #region Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  background-color: #1E1823;
+  padding: 20px;
+  padding-top: 136px;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  overflow-y: scroll;
+  visibility: visible;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  transition: color 300ms ease-in-out, transform 300ms ease-in-out;
+  color: #fff;
+}
+
+.menu-icon-close {
+  fill: currentColor;
+  transition: fill 300ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  color: #fd9222;
+}
+
+.menu-close-btn:hover .menu-icon-close,
+.menu-close-btn:focus .menu-icon-close {
+  fill: currentColor;
+  transform: rotate(180deg);
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  }
+
+.menu-nav-item {
+  color: #FFF;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.active {
+  color: #fd9222;
+}
+
+.menu-nav-link {}
+
+.menu-socials 
+ {display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 14px;
+}
+.menu-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: #fff;
+  transition: color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+
+.menu-socials-link:hover,
+.menu-socials-link:focus {
+  color: #fd9222;
+  border-color: rgba(253, 146, 34, 0.1);
+}
+
+.menu-socials-icon {
+  fill: currentColor;
+}
+
+.menu-socials-item {}
+
+
+
+/* #endregion */
