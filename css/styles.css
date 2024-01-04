@@ -814,15 +814,35 @@ img {
 
   .made-wrapper {
     display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
-  .made-left-side {
-    position: relative;
-    width: 600px;
+  @media only screen and (min-width: 1200px) {
+  .made-wrapper {
+      flex-direction: row;
+    }
   }
 
-  .made-img {}
+  .made-left-side {
+    display: block;
+    position: relative;
+    width: 335px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  @media only screen and (min-width: 768px) {
+    .made-left-side {
+        width: 614px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+  @media only screen and (min-width: 1200px) {
+    .made-left-side {
+        width: 600px;
+      }
+  }
 
   .made-btn {
     position: absolute;
@@ -840,23 +860,48 @@ img {
   }
 
   .made-right-side {
-    width: 516px;
-    padding: 32px;
+    width: 335px;
+    padding: 20px 14px;
     background-color: #fff;
-    border-radius: 15px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .made-right-side {
+        width: 614px;
+        padding: 32px;
+      }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .made-right-side {
+        width: 516px;
+      }
   }
 
   .made-subtitle {
-    width: 350px;
-    margin-bottom: 28px;
+    width: 307px;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .made-subtitle {
+        width: 350px;
+        margin-bottom: 28px;
+      }
   }
 
   .made-list {}
 
   .made-item {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     line-height: 1.28;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .made-item {
+        margin-bottom: 24px;
+      }
   }
 
   .made-item::before {
