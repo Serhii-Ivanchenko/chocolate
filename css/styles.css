@@ -175,7 +175,7 @@ img {
 }
 
 @media only screen and (max-width: 1199.98px) {
-.logo-icon {
+  .logo-icon {
     width: 21px;
     height: 21px;
   }
@@ -238,6 +238,18 @@ img {
   color: #fd9222;
 }
 
+@media (hover: hover) {
+  .nav-link: hover {
+    color: #fd9222;
+  }
+}
+
+@media not (hover: hover) {
+  .nav-link:active {
+    color: #fd9222;
+  }
+}
+
 .nav-socials {
   display: flex;
   align-items: center;
@@ -268,6 +280,20 @@ img {
 .socials-link:focus {
   color: #fd9222;
   border-color: rgba(253, 146, 34, 0.1);
+}
+
+@media (hover: hover) {
+  .socials-link: hover {
+    color: #fd9222;
+    border-color: rgba(253, 146, 34, 0.1);
+  }
+}
+
+@media not (hover: hover) {
+  .socials-link:active {
+    color: #fd9222;
+    border-color: rgba(253, 146, 34, 0.1);
+  }
 }
 
 .socials-icon {
@@ -354,7 +380,7 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-.hero-title {
+  .hero-title {
     width: 484px;
     margin-bottom: 32px;
     color: #fff;
@@ -372,7 +398,7 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-.hero-buttons-wrapper {
+  .hero-buttons-wrapper {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -394,7 +420,7 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-.orange-button {
+  .orange-button {
     padding: 14px 40px;
     min-width: 144px;
   }
@@ -404,6 +430,20 @@ img {
 .orange-button:focus {
   color: #fd9222;
   background-color: #fcf1e0;
+}
+
+@media (hover: hover) {
+  .orange-button: hover {
+    color: #fd9222;
+    background-color: #fcf1e0;
+  }
+}
+
+@media not (hover: hover) {
+  .orange-button:active {
+    color: #fd9222;
+    background-color: #fcf1e0;
+  }
 }
 
 .grey-button {
@@ -416,16 +456,32 @@ img {
   background-color: transparent;
   transition: color 300ms ease-in-out, border-color 300ms ease-in;
 }
+
 @media only screen and (min-width: 768px) {
-.grey-button {
+  .grey-button {
     padding: 14px 40px;
     min-width: 183px;
   }
 }
+
 .grey-button:hover,
 .grey-button:focus {
   color: #fd9222;
   border-color: #fd9222;
+}
+
+@media (hover: hover) {
+  .grey-button: hover {
+    color: #fd9222;
+    border-color: #fd9222;
+  }
+}
+
+@media not (hover: hover) {
+  .grey-button:active {
+    color: #fd9222;
+    border-color: #fd9222;
+  }
 }
 
 .scroll-button {
@@ -439,8 +495,9 @@ img {
   letter-spacing: -0.03em;
   transition: color 300ms ease-in-out;
 }
+
 @media only screen and (min-width: 768px) {
-.scroll-button {
+  .scroll-button {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -463,25 +520,39 @@ img {
   background-color: #fff;
   transition: background-color 300ms ease-in-out;
 }
+
 @media only screen and (max-width: 767.98px) {
   .scroll-down-icon {
-      width: 28px;
-      height: 28px;
-    }
+    width: 28px;
+    height: 28px;
+  }
 }
+
 .scroll-button:hover,
 .scroll-button:focus {
   color: #fd9222;
+}
+@media (hover: hover) {
+  .scroll-button: hover {
+    color: #fd9222;
+  }
+}
+
+@media not (hover: hover) {
+  .scroll-button:active {
+    color: #fd9222;
+  }
 }
 
 .icon-arrow {
   fill: #fd9222;
   transition: fill 300ms ease-in-out;
 }
+
 @media only screen and (max-width: 767.98px) {
-.icon-arrow {
-width: 16px;
-height: 16px;
+  .icon-arrow {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -489,10 +560,32 @@ height: 16px;
 .scroll-down-icon:focus {
   background-color: #fd9222;
 }
+@media (hover: hover) {
+  .scroll-down-icon: hover {
+    background-color: #fd9222;
+  }
+}
+
+@media not (hover: hover) {
+  .scroll-down-icon:active {
+    background-color: #fd9222;
+  }
+}
 
 .icon-arrow:hover,
 .icon-arrow:focus {
   fill: #fff;
+}
+@media (hover: hover) {
+  .icon-arrow: hover {
+    fill: #fff;
+  }
+}
+
+@media not (hover: hover) {
+  .icon-arrow:active {
+    fill: #fff;
+  }
 }
 
 /* #endregion */
@@ -516,10 +609,25 @@ height: 16px;
   padding: 50px 0;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .benefits {
+    padding: 20px 0;
+  }
+}
+
 .benefits-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 88px;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+  }
 }
 
 .benefits-item {
