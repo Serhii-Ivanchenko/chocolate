@@ -580,18 +580,42 @@
         </div>
       </section>
       <!-- Top sellers -->
-      <!-- <section class="bestsellers section">
+      <section class="bestsellers section">
         <div class="container">
           <h2 class="section-title"><span class="accent">Top</span> sellers</h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
               <div class="bestsellers-thumb">
-                <img
-                  class="bestsellers-img"
-                  src="./images/top-sellers/img-1.jpg"
-                  width="368"
-                  height="464"
-                  alt="chocolate-with-nuts" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/top-sellers/img-1_desk.jpg    1x,
+                      ./images/top-sellers/img-1_desk@2x.jpg 2x
+                    " />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/top-sellers/img-1_tab.jpg    1x,
+                      ./images/top-sellers/img-1_tab@2x.jpg 2x
+                    " />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/top-sellers/img-1_mob.jpg    1x,
+                      ./images/top-sellers/img-1_mob@2x.jpg 2x
+                    " />
+
+                  <img
+                    class="bestsellers-img"
+                    src="./images/top-sellers/img-1_desk.jpg"
+                    width="368"
+                    height="464"
+                    alt="chocolate-with-nuts"
+                    loading="lazy" />
+                </picture>
                 <p class="overlay">
                   Chocolate with nuts is a delectable combination that brings
                   together the smoothness of chocolate and the crunchiness of
@@ -604,12 +628,29 @@
             </li>
             <li class="bestsellers-item">
               <div class="bestsellers-thumb">
-                <img
-                  class="bestsellers-img"
-                  src="./images/top-sellers/img-2.jpg"
-                  width="368"
-                  height="464"
-                  alt="chocolate-with-fruits" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/top-sellers/img-2_desk.jpg    1x,
+                      ./images/top-sellers/img-2_desk@2x.jpg 2x
+                    " />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/top-sellers/img-2_tab.jpg    1x,
+                      ./images/top-sellers/img-2_tab@2x.jpg 2x
+                    " />
+
+                  <img
+                    class="bestsellers-img"
+                    src="./images/top-sellers/img-2_desk.jpg"
+                    width="368"
+                    height="464"
+                    alt="chocolate-with-fruits"
+                    loading="lazy" />
+                </picture>
                 <p class="overlay">
                   Chocolate with fruit is an unbeatable combination of two of
                   the tastiest things in the world. This dessert combines
@@ -623,10 +664,15 @@
               <div class="bestsellers-thumb">
                 <img
                   class="bestsellers-img"
-                  src="./images/top-sellers/img-3.jpg"
+                  srcset="
+                    ./images/top-sellers/img-3_desk.jpg    1x,
+                    ./images/top-sellers/img-3_desk@2x.jpg 2x
+                  "
+                  src="./images/top-sellers/img-3_desk.jpg"
                   width="368"
                   height="464"
-                  alt="dark-chocolate" />
+                  alt="dark-chocolate"
+                  loading="lazy" />
                 <p class="overlay">
                   Dark chocolate is a rich and indulgent treat that is beloved
                   by many chocolate enthusiasts. It is made from cocoa beans,
@@ -639,7 +685,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Reviews -->
       <!-- <section class="reviews section" id="reviews">
         <div class="container">
