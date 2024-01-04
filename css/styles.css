@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 375px;
+  max-width: 767.98px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -17,7 +17,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 1199.98px;
     padding: 0 32px;
   }
 }
@@ -288,7 +288,8 @@ img {
 }
 
 .hero-container {
-  width: 335px;
+  max-width: 767.98px;
+  width: calc(100% - 40px);
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
@@ -454,15 +455,20 @@ img {
 
 .scroll-down-icon {
   display: flex;
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   transition: background-color 300ms ease-in-out;
 }
-
+@media only screen and (max-width: 767.98px) {
+  .scroll-down-icon {
+      width: 28px;
+      height: 28px;
+    }
+}
 .scroll-button:hover,
 .scroll-button:focus {
   color: #fd9222;
@@ -471,6 +477,12 @@ img {
 .icon-arrow {
   fill: #fd9222;
   transition: fill 300ms ease-in-out;
+}
+@media only screen and (max-width: 767.98px) {
+.icon-arrow {
+width: 16px;
+height: 16px;
+  }
 }
 
 .scroll-down-icon:hover,
