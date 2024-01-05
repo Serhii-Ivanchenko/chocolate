@@ -938,11 +938,12 @@ img {
   flex-direction: column;
   gap: 32px;
 }
+
 @media only screen and (min-width: 768px) {
   .products-list {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -960,20 +961,22 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
 }
+
 @media only screen and (min-width: 768px) {
   .products-item {
-      border-radius: 15px;
-      width: calc((100% - 32px) / 2);
-    }
+    border-radius: 15px;
+    width: calc((100% - 32px) / 2);
+  }
 }
+
 @media only screen and (min-width: 1200px) {
   .products-item {
-      border-radius: 15px;
-      width: calc((100% - 3 * 18px) / 4);
-      border: 1px solid rgba(17, 17, 17, 0.1);
-      background: #fff;
-      padding: 32px 20px;
-    }
+    border-radius: 15px;
+    width: calc((100% - 3 * 18px) / 4);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fff;
+    padding: 32px 20px;
+  }
 }
 
 .products-img {
@@ -1026,12 +1029,12 @@ img {
 
 @media only screen and (min-width: 768px) {
   .bestsellers-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
   }
-  
+}
+
 .bestsellers-item {
   width: 335px;
   border-radius: 15px 15px 0px 0px;
@@ -1043,26 +1046,27 @@ img {
     display: none;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .bestsellers-item {
-      width: calc((100% - 16px) / 2);
-      border-radius: 15px 15px 0px 0px;
-      overflow: hidden;
-    }
+    width: calc((100% - 16px) / 2);
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199.98px) {
   .bestsellers-item:nth-child(1n+3) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .bestsellers-item {
-      width: calc((100% - 2 * 16px) / 3);
-      border-radius: 15px 15px 0px 0px;
-      overflow: hidden;
-    }
+    width: calc((100% - 2 * 16px) / 3);
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+  }
 }
 
 .bestsellers-img {}
@@ -1117,26 +1121,74 @@ img {
   padding-bottom: 120px;
 }
 
-.section-title {}
+.reviews .section-title {
+  margin-bottom: 74px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews .section-title {
+    margin-bottom: 92px;
+  }
+}
+
 
 .accent {}
 
 .reviews-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 28px;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-list {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviews-list {
+    gap: 28px;
+  }
 }
 
 .reviews-item {
   position: relative;
-  width: calc((100% - 2 * 28px) / 3);
-  padding: 24px;
-  padding-top: 56px;
+  width: 335px;
+  padding: 56px 18px 42px 18px;
   background-color: #fff;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
+}
+
+@media only screen and (max-width: 767.98px) {
+  .reviews-item:nth-child(1n+2) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-item {
+    width: calc((100% - 16px) / 2);
+    padding: 24px;
+    padding-top: 56px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .reviews-item:nth-child(1n+3) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviews-item {
+    width: calc((100% - 2 * 28px) / 3);
+  }
 }
 
 .reviews-avatar {
@@ -1151,7 +1203,6 @@ img {
 .reviews-name {
   margin-bottom: 24px;
   text-align: center;
-  line-height: 1.33;
 }
 
 .reviews-text {
@@ -1162,21 +1213,44 @@ img {
 
 .reviews-button {
   display: block;
+  min-width: 165px;
   border-radius: 100px;
   border: 1px solid #fd9222;
-  padding: 14px 40px;
+  padding: 12px 28px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   background-color: transparent;
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-button {
+    min-width: 222px;
+    padding: 14px 40px;
+    font-size: 18px;
+  }
 }
 
 .reviews-button:hover,
 .reviews-button:focus {
   color: #fff;
   background-color: #fd9222;
+}
+
+@media (hover: hover) {
+  .reviews-button: hover {
+    color: #fff;
+    background-color: #fd9222;
+  }
+}
+
+@media not (hover: hover) {
+  .reviews-button:active {
+    color: #fff;
+    background-color: #fd9222;
+  }
 }
 
 /* #endregion */
