@@ -1257,29 +1257,75 @@ img {
 
 /* #region Footer */
 .footer {
-  padding: 50px 0;
+  padding: 32px 0;
   background-color: #1e1823;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 50px 0;
+  }
 }
 
 .footer-wrapper {
   display: flex;
-  padding-bottom: 50px;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
 .footer-slogan {
-  margin-right: auto;
   width: 300px;
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 1.21;
+  line-height: 1.17;
   letter-spacing: -0.02em;
 }
 
-.footer-socials-wrapper {
-  margin-right: 50px;
+@media only screen and (min-width: 768px) {
+  .footer-slogan {
+    margin-right: auto;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+  }
 }
+
+.footer-wrapper-adaptive {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-wrapper-adaptive {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-wrapper-adaptive {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.footer-socials-wrapper {}
 
 .footer-socials {
   margin-bottom: 14px;
@@ -1313,6 +1359,20 @@ img {
   border-color: rgba(253, 146, 34, 0.1);
 }
 
+@media (hover: hover) {
+  .footer .footer-socials-link:hover {
+    color: #fd9222;
+    border-color: rgba(253, 146, 34, 0.1);
+  }
+}
+
+@media not (hover: hover) {
+  .footer .footer-socials-link:active {
+    color: #fd9222;
+    border-color: rgba(253, 146, 34, 0.1)
+  }
+}
+
 .footer-address {
   font-style: normal;
 }
@@ -1343,31 +1403,91 @@ img {
   color: #fd9222;
 }
 
+@media (hover: hover) {
+  .footer-address-link:hover {
+    color: #fd9222;
+  }
+}
+
+@media not (hover: hover) {
+  .footer-address-link:active {
+    color: #fd9222;
+  }
+}
+
 .footer-menu-wrapper {
-  padding-top: 24px;
   display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  gap: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-menu-wrapper {
+    padding-top: 24px;
+    flex-direction: row;
+  }
 }
 
 .footer-menu {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 .footer-menu-item {}
 
 .footer-menu-link {
   display: block;
-  padding: 18px 0;
+  padding: 0;
   color: #fff;
   font-weight: 500;
   line-height: 1.14;
   transition: color 300ms ease-in-out;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-menu-link {
+    display: block;
+    padding: 18px 0;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.14;
+    transition: color 300ms ease-in-out;
+  }
+}
+
 .footer-menu-link:hover,
 .footer-menu-link:focus {
   color: #fd9222;
+}
+
+@media (hover: hover) {
+  .footer-menu-link:hover {
+    color: #fd9222;
+  }
+}
+
+@media not (hover: hover) {
+  .footer-menu-link:active {
+    color: #fd9222;
+  }
 }
 
 .subscribe-wrapper {
@@ -1383,25 +1503,50 @@ img {
 .subsribe-label {}
 
 .subscribe-input {
-  width: 313px;
-  height: 52px;
-  padding: 14px 24px;
+  width: 207px;
+  height: 45px;
+  padding: 14px 28px;
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
   color: rgba(255, 255, 255, 0.3);
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.02em;
   outline: transparent;
   transition: border-color 300ms ease-in-out;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 233px;
+    height: 45px;
+    padding: 14px 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .subscribe-input {
+    width: 313px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.22;
+
+  }
+}
+
 .subscribe-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .subscribe-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .subscribe-input:focus {
@@ -1413,21 +1558,51 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 52px;
-  min-width: 137px;
-  padding: 17px 40px;
+  min-height: 45px;
+  min-width: 120px;
+  padding: 14px 26px;
   color: #fff;
   font-weight: 600;
-  line-height: 1.29;
+  line-height: normal;
   border-radius: 100px;
   background: #fd9222;
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-btn {
+    min-width: 128px;
+    padding: 14px 28px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .subscribe-btn {
+    min-height: 52px;
+    min-width: 137px;
+    padding: 17px 40px;
+    line-height: 1.29;
+  }
 }
 
 .subscribe-btn:focus,
 .subscribe-btn:hover {
   color: #fd9222;
   background-color: #fcf1e0;
+}
+
+@media (hover: hover) {
+  .subscribe-btn:hover {
+    color: #fd9222;
+    background-color: #fcf1e0;
+  }
+}
+
+@media not (hover: hover) {
+  .subscribe-btn:active {
+    color: #fd9222;
+    background-color: #fcf1e0;
+  }
 }
 
 /* #endregion */
